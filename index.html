@@ -72,24 +72,26 @@
 
     <!-- Navigation -->
     <nav
-      class="fixed left-6 top-1/2 -translate-y-1/2 z-50 backdrop-blur-xl bg-white/5 p-4 rounded-full border border-white/10"
+      class="fixed md:left-6 md:top-1/2 md:-translate-y-1/2 bottom-0 left-0 right-0 md:right-auto z-50 backdrop-blur-xl bg-white/5 md:p-4 p-2 md:rounded-full rounded-t-2xl border border-white/10"
     >
-      <div class="flex flex-col gap-6">
+      <div
+        class="flex md:flex-col flex-row justify-around md:gap-6 items-center"
+      >
         <!-- Home -->
         <div class="relative group">
           <div
-            class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500"
+            class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500 md:block"
           ></div>
           <a
             href="#"
-            class="relative flex items-center justify-center w-12 h-12 bg-black rounded-full hover:scale-110 transition-all duration-300"
+            class="relative flex items-center justify-center w-12 h-12 md:w-12 md:h-12 bg-black rounded-full hover:scale-110 transition-all duration-300"
           >
             <span
               class="text-orange-500 group-hover:text-white transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-6 w-6 md:h-6 md:w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -107,18 +109,18 @@
         <!-- About -->
         <div class="relative group">
           <div
-            class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500"
+            class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500 md:block"
           ></div>
           <a
             href="#"
-            class="relative flex items-center justify-center w-12 h-12 bg-black rounded-full hover:scale-110 transition-all duration-300"
+            class="relative flex items-center justify-center w-12 h-12 md:w-12 md:h-12 bg-black rounded-full hover:scale-110 transition-all duration-300"
           >
             <span
               class="text-orange-500 group-hover:text-white transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-6 w-6 md:h-6 md:w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -136,18 +138,18 @@
         <!-- Projects -->
         <div class="relative group">
           <div
-            class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500"
+            class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500 md:block"
           ></div>
           <a
             href="#"
-            class="relative flex items-center justify-center w-12 h-12 bg-black rounded-full hover:scale-110 transition-all duration-300"
+            class="relative flex items-center justify-center w-12 h-12 md:w-12 md:h-12 bg-black rounded-full hover:scale-110 transition-all duration-300"
           >
             <span
               class="text-orange-500 group-hover:text-white transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-6 w-6 md:h-6 md:w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -165,18 +167,18 @@
         <!-- Contact -->
         <div class="relative group">
           <div
-            class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500"
+            class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500 md:block"
           ></div>
           <a
             href="#"
-            class="relative flex items-center justify-center w-12 h-12 bg-black rounded-full hover:scale-110 transition-all duration-300"
+            class="relative flex items-center justify-center w-12 h-12 md:w-12 md:h-12 bg-black rounded-full hover:scale-110 transition-all duration-300"
           >
             <span
               class="text-orange-500 group-hover:text-white transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-6 w-6 md:h-6 md:w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -195,16 +197,18 @@
     </nav>
 
     <!-- Main Content Container -->
-    <main class="flex justify-center items-center min-h-screen px-4">
+    <main
+      class="flex justify-center items-center min-h-screen px-4 py-16 md:py-4"
+    >
       <div
-        class="relative bg-black/30 backdrop-blur-md rounded-2xl w-full max-w-6xl h-[80vh] p-6 border border-white/10 overflow-hidden"
+        class="relative bg-black/30 backdrop-blur-md rounded-2xl w-full max-w-6xl h-[80vh] md:h-[80vh] p-4 md:p-6 p-6 border border-white/10 overflow-hidden"
       >
         <!-- Scrollable Content Container -->
-        <div class="h-full pl-12 custom-scroll overflow-y-auto">
+        <div class="h-full md:pl-12 custom-scroll overflow-y-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Text Content -->
-            <div class="space-y-8">
-              <h1 class="text-6xl font-bold text-white">
+            <div class="space-y-8 order-2 md:order-1">
+              <h1 class="text-4xl md:text-6xl font-bold text-white">
                 I'm Imane Souaouti,
                 <span
                   class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500"
@@ -213,7 +217,9 @@
                 </span>
               </h1>
 
-              <p class="text-white/60 font-light tracking-wide leading-relaxed">
+              <p
+                class="text-white/60 font-light tracking-wide leading-relaxed text-sm md:text-base"
+              >
                 A passionate full-stack developer with an eye for detail and a
                 love for creating elegant solutions. Specializing in building
                 scalable web applications that combine beautiful interfaces with
@@ -221,13 +227,13 @@
               </p>
 
               <!-- Tech Stack -->
-              <div class="flex flex-wrap gap-4">
+              <div class="flex flex-wrap gap-2 md:gap-4">
                 <div class="group relative">
                   <div
                     class="absolute -inset-0.5 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"
                   ></div>
                   <div
-                    class="relative px-6 py-3 bg-black rounded-xl leading-none flex items-center gap-2"
+                    class="relative px-3 md:px-6 py-2 md:py-3 bg-black rounded-xl leading-none flex items-center gap-2"
                   >
                     <img
                       src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
@@ -235,7 +241,7 @@
                     />
 
                     <span
-                      class="text-white/80 group-hover:text-white transition-colors"
+                      class="text-white/80 text-sm md:text-base group-hover:text-white transition-colors"
                       >Javascript</span
                     >
                   </div>
@@ -245,7 +251,7 @@
                     class="absolute -inset-0.5 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"
                   ></div>
                   <div
-                    class="relative px-6 py-3 bg-black rounded-xl leading-none flex items-center gap-2"
+                    class="relative px-3 md:px-6 py-2 md:py-3 bg-black rounded-xl leading-none flex items-center gap-2"
                   >
                     <img
                       src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
@@ -253,7 +259,7 @@
                     />
 
                     <span
-                      class="text-white/80 group-hover:text-white transition-colors"
+                      class="text-white/80 text-sm md:text-base group-hover:text-white transition-colors"
                       >Typescript</span
                     >
                   </div>
@@ -263,7 +269,7 @@
                     class="absolute -inset-0.5 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"
                   ></div>
                   <div
-                    class="relative px-6 py-3 bg-black rounded-xl leading-none flex items-center gap-2"
+                    class="relative px-3 md:px-6 py-2 md:py-3 bg-black rounded-xl leading-none flex items-center gap-2"
                   >
                     <img
                       src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
@@ -271,8 +277,8 @@
                     />
 
                     <span
-                      class="text-white/80 group-hover:text-white transition-colors"
-                      >React</span
+                      class="text-white/80 text-sm md:text-base group-hover:text-white transition-colors"
+                      >ReactJs</span
                     >
                   </div>
                 </div>
@@ -281,7 +287,7 @@
                     class="absolute -inset-0.5 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"
                   ></div>
                   <div
-                    class="relative px-6 py-3 bg-black rounded-xl leading-none flex items-center gap-2"
+                    class="relative px-3 md:px-6 py-2 md:py-3 bg-black rounded-xl leading-none flex items-center gap-2"
                   >
                     <img
                       src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg"
@@ -289,7 +295,7 @@
                     />
 
                     <span
-                      class="text-white/80 group-hover:text-white transition-colors"
+                      class="text-white/80 text-sm md:text-base group-hover:text-white transition-colors"
                       >NextJS</span
                     >
                   </div>
@@ -299,7 +305,7 @@
                     class="absolute -inset-0.5 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-500"
                   ></div>
                   <div
-                    class="relative px-6 py-3 bg-black rounded-xl leading-none flex items-center gap-2"
+                    class="relative px-3 md:px-6 py-2 md:py-3 bg-black rounded-xl leading-none flex items-center gap-2"
                   >
                     <img
                       src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
@@ -307,7 +313,7 @@
                     />
 
                     <span
-                      class="text-white/80 group-hover:text-white transition-colors"
+                      class="text-white/80 text-sm md:text-base group-hover:text-white transition-colors"
                       >TailwindCSS</span
                     >
                   </div>
@@ -315,16 +321,16 @@
               </div>
 
               <!-- Buttons -->
-              <div class="flex flex-wrap gap-6">
+              <div class="flex flex-wrap gap-4 md:gap-6">
                 <button
-                  class="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl overflow-hidden cursor-pointer"
+                  class="group relative px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl overflow-hidden cursor-pointer"
                 >
                   <span
                     class="relative text-white font-medium flex items-center gap-2"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
+                      class="h-4 w-4 md:h-5 md:w-5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -347,7 +353,7 @@
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
+                      class="h-4 w-4 md:h-5 md:w-5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -364,16 +370,16 @@
                 </button>
               </div>
               <!-- Social Links -->
-              <div class="flex gap-6">
+              <div class="flex gap-4 md:gap-6">
                 <a href="#" class="group relative">
                   <div
                     class="absolute -inset-2 bg-gradient-to-r from-orange-600 to-yellow-400 rounded-full blur opacity-0 group-hover:opacity-75 transition duration-500"
                   ></div>
                   <div
-                    class="relative p-4 bg-black rounded-full border border-white/10 text-white/60 hover:text-white transition-colors"
+                    class="relative p-3 md:p-4 bg-black rounded-full border border-white/10 text-white/60 hover:text-white transition-colors"
                   >
                     <svg
-                      class="w-5 h-5"
+                      class="w-4 h-4 md:w-5 md:h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -388,10 +394,10 @@
                     class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-yellow-400 rounded-full blur opacity-0 group-hover:opacity-75 transition duration-500"
                   ></div>
                   <div
-                    class="relative p-4 bg-black rounded-full border border-white/10 text-white/60 hover:text-white transition-colors"
+                    class="relative p-3 md:p-4 bg-black rounded-full border border-white/10 text-white/60 hover:text-white transition-colors"
                   >
                     <svg
-                      class="w-5 h-5"
+                      class="w-4 h-4 md:w-5 md:h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -406,10 +412,10 @@
                     class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-yellow-400 rounded-full blur opacity-0 group-hover:opacity-75 transition duration-500"
                   ></div>
                   <div
-                    class="relative p-4 bg-black rounded-full border border-white/10 text-white/60 hover:text-white transition-colors"
+                    class="relative p-3 md:p-4 bg-black rounded-full border border-white/10 text-white/60 hover:text-white transition-colors"
                   >
                     <svg
-                      class="w-5 h-5"
+                      class="w-4 h-4 md:w-5 md:h-5"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -423,12 +429,14 @@
             </div>
 
             <!-- Image Section -->
-            <div class="relative group justify-self-end">
+            <div
+              class="relative group justify-self-center md:justify-self-end order-1 mt-32 md:-mt-4 md:order-2"
+            >
               <div
                 class="absolute rounded-2xl blur-xl opacity-30 group-hover:opacity-75 transition duration-500"
               ></div>
               <div
-                class="relative rounded-2xl overflow-hidden bg-black/50 backdrop-blur-sm p-4 border border-white/10 -mt-32"
+                class="relative rounded-2xl overflow-hidden bg-black/50 backdrop-blur-sm p-4 border border-white/10 -mt-32 md:w-96"
               >
                 <div
                   class="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-yellow-500/20"
@@ -436,7 +444,7 @@
                 <img
                   src="https://res.cloudinary.com/dv13g84vz/image/upload/v1734813828/Imane_rqhyin.jpg"
                   alt="Profile"
-                  class="relative rounded-xl w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  class="relative rounded-xl w-full h-[300px] md:h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
