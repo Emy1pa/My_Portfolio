@@ -285,71 +285,56 @@
     </main>
 
     <!-- Video Modal -->
-    <div id="videoModal" class="fixed inset-0 z-50 hidden">
-      <div
-        class="absolute inset-0 bg-black/60 modal-backdrop"
-        onclick="closeVideoModal()"
-      ></div>
-      <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl p-4"
-      >
-        <div
-          class="relative bg-[#1a1a1a] rounded-2xl border border-white/10 overflow-hidden"
-        >
-          <!-- Close Button -->
+    <div
+      id="video-modal"
+      class="fixed inset-0 flex items-center justify-center bg-black/50 hidden"
+    >
+      <div class="bg-black p-4 rounded-lg max-w-lg w-full">
+        <div class="relative">
           <button
             onclick="closeVideoModal()"
-            class="absolute top-4 right-4 text-white/60 hover:text-white transition-colors z-10"
+            class="absolute top-2 right-2 text-white text-xl font-bold"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            ×
           </button>
-          <!-- Video Container -->
-          <div class="aspect-w-16 aspect-h-9">
-            <video
-              id="projectVideo"
-              class="w-full h-full object-cover"
-              controls
-            >
-              <source src="" type="video/mp4" />
-            </video>
-          </div>
+          <iframe
+            id="video-frame"
+            width="100%"
+            height="500"
+            class="rounded-lg"
+            src=""
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
 
     <script>
-      // Modal Functions
-      function openVideoModal(projectId) {
-        const modal = document.getElementById("videoModal");
-        const video = document.getElementById("projectVideo");
-        video.src = `/assets/videos/${projectId}.mp4`;
+      function openVideoModal(project) {
+        const modal = document.getElementById("video-modal");
+        const iframe = document.getElementById("video-frame");
+
+        if (project === "tictac") {
+          iframe.src =
+            "https://res.cloudinary.com/dv13g84vz/video/upload/v1734902491/tictac_ttikq0.mp4";
+        } else if (project === "cinéma") {
+          iframe.src =
+            "https://res.cloudinary.com/dv13g84vz/video/upload/v1734901214/clideo_editor_464ebc90f2c143e7af07f7123372afb4_rlm98n.mp4";
+        }
+
         modal.classList.remove("hidden");
-        document.body.style.overflow = "hidden";
-        video.play();
       }
 
       function closeVideoModal() {
-        const modal = document.getElementById("videoModal");
-        const video = document.getElementById("projectVideo");
+        const modal = document.getElementById("video-modal");
+        const iframe = document.getElementById("video-frame");
+
+        iframe.src = "";
         modal.classList.add("hidden");
         document.body.style.overflow = "auto";
-        video.pause();
-        video.currentTime = 0;
       }
-
       // Close modal on escape key
       document.addEventListener("keydown", function (event) {
         if (event.key === "Escape") {
